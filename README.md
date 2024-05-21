@@ -24,6 +24,7 @@
 5. Тест случаи според критериумот Multiple Condition
 
   -4 тест случаеви според условот if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0')
+  
 	 1. assertEquals(true, SILab2.checkCart(create(new Item("ime1", "0111", 1111, 0.1f)), 100)); => TTT, доделените вредности се валидни
 	 2. assertEquals(false, SILab2.checkCart(create(new Item("ime2", "2222", 2222, 0.1f)), 2)); => TTF, само за barcode е неточна
 	 3. assertEquals(false, SILab2.checkCart(create(new Item("ime3", "0323", 3333, 0)), 3)); => TFX, price=true, discount=false, barcode=не е важна
